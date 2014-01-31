@@ -22,5 +22,12 @@ public class PlayerController : MonoBehaviour {
 
 		controller.AddForce (movement * playerSpeed * Time.deltaTime);
 	}
-	
+
+	void OnTriggerEnter2D(Collider2D other) 
+	{
+		if (other.gameObject.tag == "cat") 
+		{
+			other.gameObject.SetActive(false);
+		}
+	}
 }
