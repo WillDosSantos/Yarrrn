@@ -40,6 +40,6 @@ public class PlayerController : MonoBehaviour {
 
 	void SetCatCountText()
 	{
-		cat_count_text.text = "Cats Captured: " + cat_count.ToString();
+		cat_count_text.text = "Captured: " + cat_count.ToString();
 	}
 }
